@@ -11,7 +11,7 @@ pipeline {
             steps {
             
                 sh """
-                cd /home/saikrishna/Downloads/apache-jmeter-5.5/bin/jmeter.sh -n -t "Test Plans/PetStore-End-to-End-Flow.jmx" -p "Test Plans/data/PetStore_LoadTest.properties" -JTOTAL_THREADS=2 -JTEST_DURATION=60 -l MyRun1.jtl -e -o index.html
+                cd /home/saikrishna/Downloads/apache-jmeter-5.5/bin/jmeter.sh -n -t "Test Plans/PetStore-End-to-End-Flow.jmx" -p "Test Plans/data/PetStore_LoadTest.properties" -JTOTAL_THREADS=2 -JTEST_DURATION=60 -l MyRun1.jtl 
                 """
             
             }
