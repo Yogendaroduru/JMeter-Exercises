@@ -16,7 +16,12 @@ pipeline {
             
             }
         }
-        
+        stage('Publish Report') {
+            steps {
+            
+                perfReport filterRegex: '', sourceDataFiles: '**/*.jtl'
+            
+            }
         }
     }
 }
